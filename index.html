@@ -1,64 +1,69 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>سياسة الخصوصية وشروط الخدمة | KomPak</title>
-  <meta name="description" content="سياسة الخصوصية وشروط الاستخدام الرسمية لتطبيق KomPak لضغط وإدارة الوسائط محلياً.">
+  <title>KomPak - Privacy Policy & Terms of Service</title>
+  <meta name="description" content="Official Privacy Policy and Terms of Service (EULA) for KomPak Offline Media & PDF Compressor.">
   <link rel="icon" type="image/jpeg" href="logo.jpg">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;600;700&family=Noto+Sans+JP:wght@400;600;700&family=Noto+Sans+SC:wght@400;600;700&family=Noto+Sans+Devanagari:wght@400;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --primary: #2563eb;
-      --primary-dark: #1d4ed8;
-      --bg: #0f172a;
-      --card-bg: #1e293b;
+      --primary: #3B82F6;
+      --primary-dark: #1D4ED8;
+      --bg: #0F172A;
+      --card-bg: #1E293B;
       --card-border: #334155;
-      --text: #f8fafc;
-      --text-muted: #94a3b8;
-      --accent: #10b981;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --accent: #10B981;
     }
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
 
     body {
-      font-family: 'Cairo', system-ui, -apple-system, sans-serif;
       background-color: var(--bg);
       color: var(--text);
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       line-height: 1.7;
-      padding: 2rem 1rem;
+      padding: 1.5rem 1rem 4rem;
     }
 
-    body.en {
-      font-family: 'Inter', system-ui, -apple-system, sans-serif;
-      direction: ltr;
+    body.rtl {
+      direction: rtl;
+      font-family: 'Cairo', 'Noto Nastaliq Urdu', system-ui, sans-serif;
     }
+
+    body.lang-ko { font-family: 'Noto Sans KR', system-ui, sans-serif; }
+    body.lang-ja { font-family: 'Noto Sans JP', system-ui, sans-serif; }
+    body.lang-zh { font-family: 'Noto Sans SC', system-ui, sans-serif; }
+    body.lang-hi { font-family: 'Noto Sans Devanagari', system-ui, sans-serif; }
 
     .container {
       max-width: 860px;
       margin: 0 auto;
-      background: var(--card-bg);
-      border: 1px solid var(--card-border);
-      border-radius: 1.25rem;
-      padding: 2.5rem;
-      box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.5);
     }
 
     header {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 1rem;
+      padding: 1.25rem 1.5rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      border-bottom: 1px solid var(--card-border);
-      padding-bottom: 1.5rem;
-      margin-bottom: 2rem;
       flex-wrap: wrap;
       gap: 1rem;
+      margin-bottom: 2rem;
+      position: sticky;
+      top: 1rem;
+      z-index: 100;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
     .logo-area {
@@ -67,53 +72,44 @@
       gap: 1rem;
     }
 
-    .app-icon {
-      width: 56px;
-      height: 56px;
-      background: linear-gradient(135deg, #2563eb, #38bdf8);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.75rem;
-      font-weight: 800;
-      color: #fff;
-      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    .logo-area img {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+      border: 2px solid rgba(255, 255, 255, 0.1);
     }
 
     .app-title h1 {
-      font-size: 1.6rem;
+      font-size: 1.35rem;
       font-weight: 800;
-      color: #fff;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #60A5FA, #34D399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
     .app-title p {
-      font-size: 0.875rem;
+      font-size: 0.8rem;
       color: var(--text-muted);
     }
 
-    .lang-switcher {
-      display: flex;
-      gap: 0.5rem;
-    }
-
-    .lang-btn {
-      background: #334155;
-      color: var(--text);
+    .lang-switcher select {
+      background: #0F172A;
+      color: #F8FAFC;
       border: 1px solid var(--card-border);
-      padding: 0.4rem 0.9rem;
       border-radius: 0.5rem;
-      font-size: 0.85rem;
+      padding: 0.55rem 1rem;
+      font-size: 0.9rem;
+      font-weight: 600;
       cursor: pointer;
-      transition: all 0.2s ease;
-      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s;
     }
 
-    .lang-btn.active {
-      background: var(--primary);
+    .lang-switcher select:focus {
       border-color: var(--primary);
-      color: #fff;
-      font-weight: 600;
     }
 
     .badge-bar {
@@ -127,9 +123,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      background: rgba(37, 99, 235, 0.15);
-      color: #60a5fa;
-      border: 1px solid rgba(37, 99, 235, 0.3);
+      background: rgba(59, 130, 246, 0.15);
+      color: #60A5FA;
+      border: 1px solid rgba(59, 130, 246, 0.3);
       padding: 0.35rem 0.75rem;
       border-radius: 9999px;
       font-size: 0.8rem;
@@ -138,18 +134,29 @@
 
     .badge.green {
       background: rgba(16, 185, 129, 0.15);
-      color: #34d399;
+      color: #34D399;
       border-color: rgba(16, 185, 129, 0.3);
+    }
+
+    .highlight-card {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.25);
+      border-radius: 0.75rem;
+      padding: 1.25rem 1.5rem;
+      margin: 1.5rem 0 2rem;
+      color: #E2E8F0;
+      font-size: 0.95rem;
+    }
+
+    .highlight-card strong {
+      color: #34D399;
     }
 
     h2 {
       font-size: 1.25rem;
-      color: #38bdf8;
+      color: #38BDF8;
       margin-top: 2rem;
       margin-bottom: 0.75rem;
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
     }
 
     p, ul {
@@ -159,42 +166,52 @@
     }
 
     ul {
-      padding-inline-start: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    body.rtl ul {
+      padding-left: 0;
+      padding-right: 1.5rem;
     }
 
     li {
       margin-bottom: 0.5rem;
     }
 
-    .highlight-card {
-      background: rgba(16, 185, 129, 0.08);
-      border: 1px solid rgba(16, 185, 129, 0.3);
-      border-radius: 0.75rem;
-      padding: 1.25rem;
-      margin: 1.5rem 0;
-      color: #e2e8f0;
-    }
-
-    .highlight-card strong {
-      color: #34d399;
+    strong {
+      color: #F1F5F9;
     }
 
     footer {
       border-top: 1px solid var(--card-border);
-      padding-top: 1.5rem;
-      margin-top: 3rem;
+      padding-top: 2rem;
+      margin-top: 3.5rem;
       text-align: center;
       font-size: 0.85rem;
-      color: #64748b;
+      color: #64748B;
     }
 
     a {
-      color: #38bdf8;
+      color: #38BDF8;
       text-decoration: none;
     }
 
     a:hover {
       text-decoration: underline;
+    }
+
+    .lang-section {
+      display: none;
+    }
+
+    .lang-section.active {
+      display: block;
+      animation: fadeIn 0.25s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
@@ -203,172 +220,496 @@
 <div class="container">
   <header>
     <div class="logo-area">
-      <img src="logo.jpg" alt="KomPak Logo" style="width: 52px; height: 52px; border-radius: 14px; object-fit: cover; box-shadow: 0 4px 14px rgba(0,0,0,0.3); border: 2px solid rgba(255,255,255,0.1);">
+      <img src="logo.jpg" alt="KomPak Logo">
       <div class="app-title">
         <h1>KomPak</h1>
-        <p>Offline Media Compressor & Optimizer</p>
+        <p>Smart On-Device Media & PDF Compressor</p>
       </div>
     </div>
     <div class="lang-switcher">
-      <button class="lang-btn active" id="btn-ar" onclick="setLang('ar')">العربية</button>
-      <button class="lang-btn" id="btn-en" onclick="setLang('en')">English</button>
+      <select id="lang-select" onchange="switchLanguage(this.value)">
+        <option value="en">English (U.S.)</option>
+        <option value="ar">العربية (Arabic)</option>
+        <option value="tr">Türkçe (Turkish)</option>
+        <option value="id">Bahasa Indonesia</option>
+        <option value="zh">简体中文 (Chinese)</option>
+        <option value="de">Deutsch (German)</option>
+        <option value="es">Español (Spanish)</option>
+        <option value="ko">한국어 (Korean)</option>
+        <option value="ur">اردو (Urdu)</option>
+        <option value="hi">हिन्दी (Hindi)</option>
+        <option value="fi">Suomi (Finnish)</option>
+        <option value="ru">Русский (Russian)</option>
+        <option value="ja">日本語 (Japanese)</option>
+        <option value="fr">Français (French)</option>
+      </select>
     </div>
   </header>
 
-  <!-- Arabic Section -->
-  <main id="content-ar">
-    <div class="badge-bar">
-      <span class="badge green">🛡️ خصوصية بنسبة 100%</span>
-      <span class="badge green">⚡ معالجة محلية بدون إنترنت (On-Device)</span>
-      <span class="badge">تاريخ التحديث: 30 سبتمبر 2026</span>
-    </div>
-
-    <div class="highlight-card">
-      <strong>الركيزة الأساسية لـ KomPak:</strong> تطبيق KomPak مصمم ليعمل بدون أي خوادم خارجية؛ جميع عمليات ضغط ومعالجة الصور ومقاطع الفيديو والملفات تتم بنسبة 100% داخل جهازك دون أن تغادره على الإطلاق.
-    </div>
-
-    <h2>1. نظرة عامة</h2>
-    <p>توضح سياسة الخصوصية هذه كيفية تعامل تطبيق <strong>KomPak</strong> (المطور: محمد القحطاني) مع بيانات المستخدمين. نحن نؤمن بأن خصوصيتك حق أصيل، لذا تم بناء التطبيق منذ السطر البرمجي الأول على مبدأ <strong>"انعدام جمع البيانات" (Zero Data Collection)</strong>.</p>
-
-    <h2>2. البيانات التي لا نجمعها</h2>
-    <ul>
-      <li><strong>ملفاتك ووسائطك:</strong> الصور ومقاطع الفيديو والملفات الصوتية التي تختار ضغطها أو تعديلها تُعالج بالكامل على وحدة المعالجة في هاتفك محلياً، ولا نملك أي وصول إليها ولا يتم رفعها لأي خادم سحابي.</li>
-      <li><strong>البيانات الشخصية:</strong> لا يطلب التطبيق إنشاء حساب، ولا يطلب اسمك أو بريدك الإلكتروني أو رقم هاتفك.</li>
-      <li><strong>بيانات الموقع الجغرافي:</strong> لا نطلب ولا نتتبع موقعك الجغرافي مطلقاً.</li>
-      <li><strong>جهات الاتصال والمعلومات الحساسة:</strong> التطبيق لا يطلب ولا يملك صلاحية الوصول إلى سجلاتك أو جهات اتصالك.</li>
-    </ul>
-
-    <h2>3. الأذونات والصلاحيات المطلوبة</h2>
-    <p>يطلب التطبيق الحد الأدنى من الأذونات البرمجية الضرورية فقط لأداء وظيفته المحلية:</p>
-    <ul>
-      <li><strong>إذن مكتبة الصور والوسائط (Photos & Media Library):</strong> للسماح لك باختيار الصور والفيديوهات المراد ضغطها، وحفظ النسخ المضغوطة الجديدة في المعرض.</li>
-      <li><strong>إذن الكاميرا (Camera - اختياري):</strong> في حال رغبت بالتقاط صورة أو فيديو جديد مباشرة من داخل التطبيق للضغط الفوري.</li>
-      <li><strong>إذن التخزين (Storage):</strong> لتحديد وحفظ مسارات الملفات المضغوطة في وحدة التخزين المحلية.</li>
-    </ul>
-
-    <h2>4. المشتريات والاشتراكات داخل التطبيق (In-App Purchases)</h2>
-    <p>يتضمن تطبيق KomPak مزايا متقدمة اختيارية قابلة للشراء:</p>
-    <ul>
-      <li><strong>الشراء الدائم (Lifetime Purchase):</strong> دفعة واحدة تفتح كافة المزايا مدى الحياة.</li>
-      <li><strong>الاشتراك السنوي (Annual Subscription):</strong> اشتراك يتجدد تلقائياً ما لم يتم إلغاؤه قبل 24 ساعة من تاريخ التجديد.</li>
-    </ul>
-    <p>تتم كافة المعاملات المالية ومعالجة بطاقات الدفع بشكل آمن ومشفر بنسبة 100% عبر متجر <strong>Google Play</strong> لنظام أندرويد ومتجر <strong>Apple App Store</strong> لنظام iOS. لا يطّلع مطور التطبيق ولا يخزن أي معلومات بنكية أو بطاقات ائتمان.</p>
-
-    <h2>5. أمان وحماية البيانات</h2>
-    <p>نظراً لأن جميع العمليات محصورة داخل حاوية التطبيق الآمنة على هاتفك، فإن أمان ملفاتك محمي بواسطة بروتوكولات الأمان الأصلية لنظام التشغيل (Android / iOS).</p>
-
-    <h2>6. خصوصية الأطفال</h2>
-    <p>التطبيق آمن للاستخدام العام ولا يستهدف جمع بيانات الأطفال وفقاً للوائح حماية خصوصية الأطفال على الإنترنت (COPPA) ومتطلبات أمان العائلة في Google Play و App Store.</p>
-
-    <h2>7. التعديلات على هذه السياسة</h2>
-    <p>قد نقوم بتحديث سياسة الخصوصية من وقت لآخر لتعكس أي ميزات إضافية. سيتم نشر أي تغيير على هذه الصفحة فور اعتماده.</p>
-
-    <h2 id="terms">9. شروط الاستخدام واتفاقية ترخيص المستخدم النهائي (EULA)</h2>
-    <p>باستخدامك لتطبيق KomPak، فإنك توافق على الالتزام بالشروط والأحكام التالية:</p>
-    <ul>
-      <li><strong>الترخيص:</strong> يمنحك المطور ترخيصاً شخصياً، غير حصري، وغير قابل للتحويل لاستخدام التطبيق على أجهزتك المتوافقة وفقاً لسياسات المتجر.</li>
-      <li><strong>الاشتراكات المتجددة تلقائياً:</strong> يتم تجديد الاشتراك السنوي تلقائياً ما لم يتم إيقاف التجديد التلقائي قبل 24 ساعة على الأقل من نهاية الفترة الحالية. يمكنك إدارة أو إلغاء اشتراكك في أي وقت عبر إعدادات حساب Google Play أو Apple ID.</li>
-      <li><strong>اتفاقية الترخيص القياسية من Apple:</strong> بالنسبة لمستخدمي أجهزة iOS، يخضع استخدام التطبيق لشروط اتفاقية ترخيص المستخدم النهائي القياسية المقدمة من شركة Apple (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>).</li>
-      <li><strong>إخلاء المسؤولية:</strong> يُقدم التطبيق "كما هو" لأغراض تحسين وضغط الوسائط، ويُنصح دائماً بالاحتفاظ بنسخ احتياطية لملفاتك الأصلية الهامة.</li>
-    </ul>
-
-    <h2>10. التواصل معنا</h2>
-    <p>إذا كانت لديك أي استفسارات أو ملاحظات بخصوص سياسة الخصوصية أو شروط الاستخدام، يسعدنا تواصلك معنا عبر البريد الإلكتروني:<br>
-    📧 <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
-  </main>
-
-  <!-- English Section -->
-  <main id="content-en" style="display: none;">
+  <!-- 1. ENGLISH (U.S.) -->
+  <main id="lang-en" class="lang-section active">
     <div class="badge-bar">
       <span class="badge green">🛡️ 100% Privacy-First</span>
-      <span class="badge green">⚡ 100% On-Device Offline Processing</span>
-      <span class="badge">Last Updated: September 30, 2026</span>
+      <span class="badge green">⚡ 100% On-Device Offline Engine</span>
+      <span class="badge">Last Updated: October 2026</span>
     </div>
 
     <div class="highlight-card">
-      <strong>Core Principle of KomPak:</strong> KomPak is engineered to operate without external cloud servers. All compression, optimization, and processing of images, videos, and media happen entirely on your device and never leave your phone.
+      <strong>Core Principle of KomPak:</strong> KomPak is engineered to operate without external cloud servers. All compression, optimization, and processing of images, videos, and PDFs happen 100% locally on your device hardware and never leave your phone.
     </div>
 
-    <h2>1. Overview</h2>
-    <p>This Privacy Policy explains how <strong>KomPak</strong> (developed by Mohammed Alqhtani) handles user data. We strongly believe privacy is a fundamental right; therefore, KomPak is built upon the principle of <strong>Zero Data Collection</strong>.</p>
+    <h2>1. Overview & Zero Data Collection</h2>
+    <p>This Privacy Policy explains how <strong>KomPak</strong> (developed by Mohammed Alqahtani) handles user data. We strongly believe privacy is a fundamental human right. Therefore, KomPak is built upon the foundation of <strong>Zero Data Collection</strong>.</p>
 
     <h2>2. Data We Do Not Collect</h2>
     <ul>
-      <li><strong>Your Files and Media:</strong> Photos, videos, and audio files selected for compression are processed exclusively by your device's local processor. We do not access, inspect, or upload your media to any cloud servers.</li>
-      <li><strong>Personal Information:</strong> No account creation is required. We do not ask for or collect names, emails, phone numbers, or identities.</li>
+      <li><strong>Your Files and Media:</strong> Photos, videos, and PDFs selected for compression are processed exclusively by your device's local CPU/GPU. We do not inspect, upload, or transmit your media to any cloud servers.</li>
+      <li><strong>Personal Information:</strong> No account creation is required. We never ask for, collect, or store your name, email address, phone number, or identity.</li>
       <li><strong>Location Data:</strong> We never request or track your geographic location.</li>
-      <li><strong>Contacts & Sensitive Info:</strong> We do not request or have access to your contacts or device logs.</li>
+      <li><strong>Contacts & Sensitive Info:</strong> We have zero access to your contacts, address book, or system logs.</li>
     </ul>
 
     <h2>3. Permissions Required</h2>
-    <p>KomPak requests only the minimal permissions essential to its core local functions:</p>
+    <p>KomPak uses the minimum system permissions necessary to perform local functions:</p>
     <ul>
-      <li><strong>Photo & Media Library:</strong> To enable selecting media files for compression and saving the compressed copies back to your gallery.</li>
-      <li><strong>Camera (Optional):</strong> If you choose to capture a new photo or video directly inside the app for immediate compression.</li>
-      <li><strong>Storage:</strong> To read and write compressed files locally on your device.</li>
+      <li><strong>Photo & Media Library:</strong> To enable selecting media files for compression and saving optimized copies back to your device Gallery / Camera Roll.</li>
+      <li><strong>Documents & Files:</strong> To read user-selected PDF files and save compressed versions to your local storage.</li>
     </ul>
 
     <h2>4. In-App Purchases & Subscriptions</h2>
-    <p>KomPak offers optional premium features:</p>
+    <p>All in-app purchases and subscriptions are securely processed directly by <strong>Apple App Store In-App Purchases</strong> on iOS and <strong>Google Play Billing</strong> on Android. The developer never receives, stores, or accesses your financial or payment details.</p>
+
+    <h2>5. Children's Privacy</h2>
+    <p>KomPak does not collect any personal information from children under 13, adhering strictly to COPPA regulations, Apple Family Policies, and Google Play Families Policies.</p>
+
+    <h2>6. Terms of Service & EULA</h2>
+    <p>By downloading or using KomPak, you agree to Apple's Standard Licensed Application End User License Agreement (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>) and standard Google Play Terms of Service.</p>
+
+    <h2>7. Support & Contact</h2>
+    <p>For questions or assistance, please contact us directly at:<br>
+    ✉️ <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a><br>
+    🐞 Issue Tracker: <a href="https://github.com/mamq144/TotalCompress/issues" target="_blank">GitHub Support</a></p>
+  </main>
+
+  <!-- 2. ARABIC (العربية) -->
+  <main id="lang-ar" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ خصوصية بنسبة 100%</span>
+      <span class="badge green">⚡ معالجة محلية بالكامل بدون إنترنت (On-Device)</span>
+      <span class="badge">تاريخ التحديث: أكتوبر 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>الركيزة الأساسية لـ KomPak:</strong> تطبيق KomPak مصمم ليعمل بدون أي خوادم خارجية؛ جميع عمليات ضغط ومعالجة الصور ومقاطع الفيديو والـ PDF تتم بنسبة 100% داخل جهازك دون أن تغادره على الإطلاق.
+    </div>
+
+    <h2>1. نظرة عامة وانعدام جمع البيانات</h2>
+    <p>توضح سياسة الخصوصية هذه كيفية تعامل تطبيق <strong>KomPak</strong> (المطور: محمد القحطاني) مع بيانات المستخدمين. تم بناء التطبيق على مبدأ <strong>"انعدام جمع البيانات" (Zero Data Collection)</strong>.</p>
+
+    <h2>2. البيانات التي لا نجمعها</h2>
     <ul>
-      <li><strong>Lifetime Purchase (Non-Consumable):</strong> A one-time purchase unlocking all pro features permanently.</li>
-      <li><strong>Annual Subscription (Auto-Renewable):</strong> Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current billing cycle.</li>
+      <li><strong>ملفاتك ووسائطك:</strong> الصور والفيديوهات ومستندات PDF تُعالج محلياً على هاتفك دون خوادم سحابية.</li>
+      <li><strong>البيانات الشخصية:</strong> لا يطلب التطبيق تسجيل حساب، ولا يجمع اسمك أو بريدك أو رقم هاتفك.</li>
+      <li><strong>الموقع وجهات الاتصال:</strong> لا نتتبع موقعك ولا نصل لجهات اتصالك نهائياً.</li>
     </ul>
-    <p>All financial transactions are handled securely and directly by <strong>Google Play Billing</strong> on Android and <strong>Apple App Store In-App Purchases</strong> on iOS. The developer never accesses, processes, or stores your financial or payment details.</p>
 
-    <h2>5. Security</h2>
-    <p>Because all compression takes place locally within the app's sandboxed environment, your data security is safeguarded by the built-in operating system security of iOS and Android.</p>
-
-    <h2>6. Children's Privacy</h2>
-    <p>Our app does not knowingly collect any personal data from children under 13, adhering to COPPA regulations and Google Play / Apple Family Policies.</p>
-
-    <h2>7. Policy Updates</h2>
-    <p>We may update this Privacy Policy from time to time. Any changes will be posted directly on this page.</p>
-
-    <h2 id="terms-en">9. Terms of Service & End User License Agreement (EULA)</h2>
-    <p>By downloading or using KomPak, you agree to be bound by the following terms:</p>
+    <h2>3. الأذونات المطلوبة</h2>
     <ul>
-      <li><strong>License:</strong> The developer grants you a personal, non-exclusive, non-transferable license to use KomPak on compatible devices in accordance with store policies.</li>
-      <li><strong>Auto-Renewable Subscriptions:</strong> Subscriptions renew automatically unless cancelled at least 24 hours prior to the end of the current billing cycle. You may manage or cancel subscriptions anytime in your Google Play or Apple ID account settings.</li>
-      <li><strong>Apple Standard EULA:</strong> For iOS users, your use of the application is subject to Apple's Standard Licensed Application End User License Agreement (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>).</li>
-      <li><strong>Disclaimer of Warranties:</strong> The software is provided "AS IS". Always maintain backups of your critical media files before performing batch operations.</li>
+      <li><strong>مكتبة الصور والملفات:</strong> لاختيار الوسائط المراد ضغطها وحفظ النسخ المضغوطة الجديدة في المعرض.</li>
+      <li><strong>المستندات:</strong> لقراءة وحفظ ملفات PDF المضغوطة داخل جهازك.</li>
     </ul>
 
-    <h2>10. Contact Us</h2>
-    <p>If you have any questions or feedback regarding this policy or terms, feel free to contact us at:<br>
-    📧 <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+    <h2>4. المشتريات والاشتراكات داخل التطبيق</h2>
+    <p>تتم عمليات الدفع حصراً عبر أنظمة الدفع الرسمية والآمنة لمتجري <strong>Apple App Store</strong> و <strong>Google Play</strong>، ولا يطلع المطور على أي بيانات دفع أو بطاقات ائتمانية.</p>
+
+    <h2>5. شروط الاستخدام (EULA)</h2>
+    <p>يخضع استخدام التطبيق لشروط ترخيص أبل القياسية (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>).</p>
+
+    <h2>6. الدعم والتواصل</h2>
+    <p>لأي استفسار يرجى التواصل عبر:<br>
+    ✉️ <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 3. TURKISH (Türkçe) -->
+  <main id="lang-tr" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ %100 Gizlilik Odaklı</span>
+      <span class="badge green">⚡ %100 Cihaz İçi Çevrimdışı Motor</span>
+      <span class="badge">Son Güncelleme: Ekim 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPak Temel İlkesi:</strong> KomPak, harici bulut sunucuları olmadan çalışacak şekilde tasarlanmıştır. Fotoğraf, video ve PDF dosyalarının tüm sıkıştırma ve optimizasyon işlemleri %100 yerel olarak cihazınızda gerçekleşir ve asla telefonunuzdan ayrılmaz.
+    </div>
+
+    <h2>1. Genel Bakış ve Sıfır Veri Toplama</h2>
+    <p>Bu Gizlilik Politikası, <strong>KomPak</strong> uygulamasının kullanıcı verilerini nasıl işlediğini açıklar. KomPak, <strong>Sıfır Veri Toplama (Zero Data Collection)</strong> ilkesi üzerine inşa edilmiştir.</p>
+
+    <h2>2. Toplamadığımız Veriler</h2>
+    <ul>
+      <li><strong>Dosyalarınız ve Medyalarınız:</strong> Sıkıştırma için seçilen medya dosyaları doğrudan cihazınızın işlemcisinde işlenir. Sunuculara hiçbir dosya yüklenmez.</li>
+      <li><strong>Kişisel Bilgiler:</strong> Hesap oluşturma gerekmez; ad, e-posta veya telefon numarası toplanmaz.</li>
+      <li><strong>Konum ve Kişiler:</strong> Konumunuz veya rehberiniz asla izlenmez ve bunlara erişilmez.</li>
+    </ul>
+
+    <h2>3. Gerekli İzinler</h2>
+    <p>Yalnızca yerel sıkıştırma ve kaydetme işlevleri için gereken asgari izinler istenir (Fotoğraf Galerisi ve Dosyalar erişimi).</p>
+
+    <h2>4. Uygulama İçi Satın Alımlar</h2>
+    <p>Tüm ödemeler doğrudan ve güvenli bir şekilde <strong>Apple App Store</strong> ve <strong>Google Play</strong> sistemleri üzerinden gerçekleştirilir.</p>
+
+    <h2>5. Kullanım Koşulları (EULA) ve İletişim</h2>
+    <p>Kullanım, Apple Standart EULA şartlarına tabidir (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>).<br>Destek: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 4. INDONESIAN (Bahasa Indonesia) -->
+  <main id="lang-id" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% Privasi Terjamin</span>
+      <span class="badge green">⚡ 100% Pemrosesan Offline di Perangkat</span>
+      <span class="badge">Pembaruan: Oktober 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>Prinsip Utama KomPak:</strong> KomPak beroperasi tanpa server cloud eksternal. Semua kompresi foto, video, dan PDF diproses 100% secara lokal di perangkat Anda tanpa pernah meninggalkan ponsel Anda.
+    </div>
+
+    <h2>1. Kebijakan Privasi & Nol Pengumpulan Data</h2>
+    <p>KomPak dibangun berdasarkan prinsip <strong>Nol Pengumpulan Data (Zero Data Collection)</strong>. Privasi Anda adalah prioritas mutlak kami.</p>
+
+    <h2>2. Data yang Tidak Kami Kumpulkan</h2>
+    <ul>
+      <li><strong>File & Media Anda:</strong> Diproses secara lokal di CPU/GPU perangkat Anda. Tidak ada pengunggahan ke cloud.</li>
+      <li><strong>Informasi Pribadi:</strong> Tanpa pendaftaran akun, tanpa pelacakan nama, email, atau nomor telepon.</li>
+      <li><strong>Lokasi & Kontak:</strong> Kami tidak pernah mengakses lokasi atau kontak perangkat Anda.</li>
+    </ul>
+
+    <h2>3. Pembelian Dalam Aplikasi</h2>
+    <p>Transaksi ditangani langsung oleh <strong>Apple App Store</strong> dan <strong>Google Play Store</strong>. Pengembang tidak menyimpan informasi kartu pembayaran Anda.</p>
+
+    <h2>4. Ketentuan Penggunaan (EULA) & Kontak</h2>
+    <p>Tunduk pada <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>.<br>Email Dukungan: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 5. CHINESE (简体中文) -->
+  <main id="lang-zh" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% 隐私优先</span>
+      <span class="badge green">⚡ 100% 本地离线引擎处理</span>
+      <span class="badge">更新日期：2026年10月</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPak 的核心原则：</strong> KomPak 完全在本地设备硬件上运行，无需外部云服务器。所有图片、视频和 PDF 文件的压缩与优化均 100% 在您的手机上完成，文件绝不会上传或离开您的设备。
+    </div>
+
+    <h2>1. 概述与零数据收集</h2>
+    <p><strong>KomPak</strong>（由 Mohammed Alqahtani 开发）基于<strong>零数据收集（Zero Data Collection）</strong>原则构建。我们不追踪或存储任何用户数据。</p>
+
+    <h2>2. 我们不收集的数据</h2>
+    <ul>
+      <li><strong>您的媒体文件：</strong> 压缩的所有照片和视频均由本地处理器处理，绝不上传到任何远程服务器。</li>
+      <li><strong>个人信息：</strong> 无需创建账户，不收集姓名、电子邮件或电话号码。</li>
+      <li><strong>位置与通讯录：</strong> 绝不请求或访问您的地理位置及通讯录。</li>
+    </ul>
+
+    <h2>3. 应用内购买与服务条款</h2>
+    <p>所有交易均由 <strong>Apple App Store</strong> 和 <strong>Google Play</strong> 安全处理。使用本应用须遵守 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple 标准 EULA 协议</a>。<br>支持邮箱：<a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 6. GERMAN (Deutsch) -->
+  <main id="lang-de" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% Datenschutz</span>
+      <span class="badge green">⚡ 100% Lokale Offline-Verarbeitung</span>
+      <span class="badge">Stand: Oktober 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>Grundprinzip von KomPak:</strong> KomPak arbeitet vollständig ohne externe Cloud-Server. Sämtliche Komprimierungen von Videos, Fotos und PDFs finden ausschließlich lokal auf Ihrem Gerät statt und verlassen dieses niemals.
+    </div>
+
+    <h2>1. Übersicht & Keine Datenerfassung</h2>
+    <p>KomPak basiert auf dem strikten Prinzip <strong>Null Datenerfassung (Zero Data Collection)</strong>. Wir erheben oder speichern keinerlei personenbezogene Daten.</p>
+
+    <h2>2. Daten, die wir nicht sammeln</h2>
+    <ul>
+      <li><strong>Ihre Dateien:</strong> Medien werden ausschließlich durch den lokalen Prozessor Ihres Geräts komprimiert. Keine Cloud-Uploads.</li>
+      <li><strong>Persönliche Angaben:</strong> Keine Registrierung erforderlich, kein Zugriff auf Name, E-Mail oder Telefonnummer.</li>
+      <li><strong>Standort & Kontakte:</strong> Kein Zugriff auf Standortdaten oder Kontaktbücher.</li>
+    </ul>
+
+    <h2>3. Nutzungsbedingungen (EULA) & Kontakt</h2>
+    <p>Geregelt durch die <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Standard-EULA von Apple</a>.<br>Support: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 7. SPANISH (Español) -->
+  <main id="lang-es" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% Privacidad Garantizada</span>
+      <span class="badge green">⚡ Procesamiento 100% local sin conexión</span>
+      <span class="badge">Actualizado: Octubre 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>Principio fundamental de KomPak:</strong> KomPak funciona sin servidores externos. Toda la compresión y procesamiento de imágenes, vídeos y PDFs se realiza al 100% en el dispositivo y sus archivos nunca salen de su teléfono.
+    </div>
+
+    <h2>1. Cero recopilación de datos</h2>
+    <p>KomPak está diseñado bajo el principio estricto de <strong>Cero Recopilación de Datos</strong>. Su privacidad es inviolable.</p>
+
+    <h2>2. Datos que no recopilamos</h2>
+    <ul>
+      <li><strong>Sus archivos multimedia:</strong> Se procesan localmente sin ningún envío a la nube.</li>
+      <li><strong>Información personal:</strong> No requiere cuenta, ni recopila nombres, correos o números de teléfono.</li>
+      <li><strong>Ubicación y contactos:</strong> Nunca solicitamos ni rastreamos su ubicación o contactos.</li>
+    </ul>
+
+    <h2>3. Términos de uso (EULA) y Soporte</h2>
+    <p>Sujeto al acuerdo estándar de <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple EULA</a>.<br>Contacto: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 8. KOREAN (한국어) -->
+  <main id="lang-ko" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% 개인정보 보호</span>
+      <span class="badge green">⚡ 100% 기기 내 오프라인 엔진 처리</span>
+      <span class="badge">최종 업데이트: 2026년 10월</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPak의 핵심 원칙:</strong> KomPak은 외부 클라우드 서버 없이 작동하도록 설계되었습니다. 이미지, 비디오, PDF의 모든 압축 및 최적화 작업은 기기 내에서 100% 로컬로 수행되며 사용자의 파일을 외부로 절대 전송하지 않습니다.
+    </div>
+
+    <h2>1. 개요 및 데이터 수집 없음</h2>
+    <p><strong>KomPak</strong>은 <strong>데이터 수집 제로(Zero Data Collection)</strong> 원칙을 준수합니다. 어떠한 개인정보도 수집, 저장, 전송하지 않습니다.</p>
+
+    <h2>2. 수집하지 않는 데이터</h2>
+    <ul>
+      <li><strong>사용자 미디어 파일:</strong> 기기 프로세서를 통해 온디바이스로만 처리되며 서버 업로드가 없습니다.</li>
+      <li><strong>개인 식별 정보:</strong> 계정 생성이 필요 없으며 이름, 이메일, 전화번호를 요구하지 않습니다.</li>
+      <li><strong>위치 및 연락처 정보:</strong> 사용자의 위치나 연락처에 절대 접근하지 않습니다.</li>
+    </ul>
+
+    <h2>3. 이용약관 (EULA) 및 문의</h2>
+    <p>본 앱은 <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple 표준 EULA</a>의 적용을 받습니다.<br>지원 이메일: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 9. URDU (اردو) -->
+  <main id="lang-ur" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100٪ رازداری کی ضمانت</span>
+      <span class="badge green">⚡ مکمل طور پر آف لائن لوکل پروسیسنگ</span>
+      <span class="badge">تاریخ تجدید: اکتوبر 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPak کا بنیادی اصول:</strong> KomPak کسی کلاؤڈ سرور کے بغیر کام کرتا ہے۔ تصاویر، ویڈیوز اور پی ڈی ایف فائلوں کی تمام تر کمپریشن 100٪ آپ کے فون کے اندر لوکل طور پر ہوتی ہے اور فائلیں کبھی بھی آپ کے ڈیوائس سے باہر نہیں جاتیں۔
+    </div>
+
+    <h2>1. ڈیٹا جمع نہ کرنے کی پالیسی</h2>
+    <p>KomPak صفر ڈیٹا کلیکشن (Zero Data Collection) کی بنیاد پر کام کرتا ہے۔ ہم کوئی بھی ذاتی معلومات محفوظ یا شیئر نہیں کرتے۔</p>
+
+    <h2>2. وہ ڈیٹا جو ہم جمع نہیں کرتے</h2>
+    <ul>
+      <li><strong>آپ کی فائلیں اور میڈیا:</strong> کمپریشن فون کے اندر ہی ہوتی ہے، کوئی فائل کلاؤڈ پر اپلوڈ نہیں ہوتی۔</li>
+      <li><strong>ذاتی تفصیلات:</strong> نہ اکاؤنٹ بنانے کی ضرورت ہے اور نہ ہی نام، ای میل یا فون نمبر مانگا جاتا ہے۔</li>
+      <li><strong>لوکیشن اور رابطے:</strong> آپ کی لوکیشن یا کانٹیکٹس تک کوئی رسائی نہیں ہے۔</li>
+    </ul>
+
+    <h2>3. شرائط و ضوابط اور رابطہ</h2>
+    <p>استعمال <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">ایپل معیاری EULA</a> کے تحت ہے۔<br>رابطہ: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 10. HINDI (हिन्दी) -->
+  <main id="lang-hi" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% गोपनीयता की गारंटी</span>
+      <span class="badge green">⚡ 100% डिवाइस पर ऑफ़लाइन प्रोसेसिंग</span>
+      <span class="badge">अंतिम अपडेट: अक्टूबर 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPak का मुख्य सिद्धांत:</strong> KomPak किसी बाहरी क्लाउड सर्वर के बिना काम करता है। फ़ोटो, वीडियो और PDF का संपीड़न 100% आपके फ़ोन पर स्थानीय रूप से होता है और आपकी फ़ाइलें कभी आपके फ़ोन से बाहर नहीं जाती हैं।
+    </div>
+
+    <h2>1. शून्य डेटा संग्रह नीति</h2>
+    <p>KomPak पूरी तरह से <strong>ज़ीरो डेटा कलेक्शन (Zero Data Collection)</strong> के सिद्धांत पर काम करता है। हम आपकी कोई भी व्यक्तिगत जानकारी एकत्र नहीं करते हैं।</p>
+
+    <h2>2. हम जो डेटा एकत्र नहीं करते</h2>
+    <ul>
+      <li><strong>आपकी मीडिया फ़ाइलें:</strong> फ़ाइलें स्थानीय रूप से संसाधित होती हैं और किसी सर्वर पर अपलोड नहीं की जाती हैं।</li>
+      <li><strong>व्यक्तिगत जानकारी:</strong> किसी खाते की आवश्यकता नहीं है; कोई नाम, ईमेल या फ़ोन नंबर एकत्र नहीं किया जाता है।</li>
+      <li><strong>स्थान और संपर्क:</strong> हम आपके स्थान या संपर्कों को कभी ट्रैक नहीं करते हैं।</li>
+    </ul>
+
+    <h2>3. सेवा की शर्तें (EULA) और सहायता</h2>
+    <p>उपयोग <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple मानक EULA</a> के अधीन है।<br>सहायता ईमेल: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 11. FINNISH (Suomi) -->
+  <main id="lang-fi" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100 % Yksityisyyssuoja</span>
+      <span class="badge green">⚡ 100 % Laitteessa tapahtuva offline-käsittely</span>
+      <span class="badge">Päivitetty: Lokakuu 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPakin perusperiaate:</strong> KomPak toimii täysin ilman ulkoisia pilvipalvelimia. Kaikkien kuvien, videoiden ja PDF-tiedostojen pakkaus tapahtuu 100-prosenttisesti laitteesi omalla laitteistolla, eivätkä tiedostosi koskaan poistu puhelimestasi.
+    </div>
+
+    <h2>1. Yleiskatsaus & Ei tiedonkeruuta</h2>
+    <p>KomPak perustuu ehdottomaan <strong>nollatiedonkeruun (Zero Data Collection)</strong> periaatteeseen. Emme kerää, tallenna tai jaa mitään käyttäjätietoja.</p>
+
+    <h2>2. Tiedot, joita emme kerää</h2>
+    <ul>
+      <li><strong>Tiedostosi ja mediasi:</strong> Käsitellään paikallisesti ilman pilvipalveluita tai etäsiirtoja.</li>
+      <li><strong>Henkilötiedot:</strong> Tiliä ei tarvita, eikä nimeä, sähköpostia tai puhelinnumeroa kysytä.</li>
+      <li><strong>Sijainti ja yhteystiedot:</strong> Emme koskaan käytä tai seuraa sijaintiasi tai yhteystietojasi.</li>
+    </ul>
+
+    <h2>3. Käyttöehdot (EULA) ja tuki</h2>
+    <p>Sovellusta koskevat <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Applen vakiomuotoiset EULA-ehdot</a>.<br>Tuki: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 12. RUSSIAN (Русский) -->
+  <main id="lang-ru" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% Конфиденциальность</span>
+      <span class="badge green">⚡ 100% Локальная офлайн-обработка</span>
+      <span class="badge">Обновлено: Октябрь 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>Главный принцип KomPak:</strong> KomPak работает полностью автономно без облачных серверов. Всё сжатие фото, видео и PDF происходит на 100% локально на процессоре вашего устройства и файлы никогда не покидают ваш телефон.
+    </div>
+
+    <h2>1. Политика нулевого сбора данных</h2>
+    <p>KomPak построен на строгом принципе <strong>нулевого сбора данных (Zero Data Collection)</strong>. Мы ценим вашу конфиденциальность.</p>
+
+    <h2>2. Данные, которые мы не собираем</h2>
+    <ul>
+      <li><strong>Ваши файлы и медиа:</strong> Обрабатываются локально без загрузки в облако.</li>
+      <li><strong>Личная информация:</strong> Аккаунт не требуется; имя, email и телефон не собираются.</li>
+      <li><strong>Геолокация и контакты:</strong> Приложение не имеет доступа к вашему местоположению и контактам.</li>
+    </ul>
+
+    <h2>3. Условия использования (EULA) и Поддержка</h2>
+    <p>Применяется стандартное лицензионное соглашение <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple Standard EULA</a>.<br>Контакты: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 13. JAPANESE (日本語) -->
+  <main id="lang-ja" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% プライバシー保護</span>
+      <span class="badge green">⚡ 100% 完全オフライン・オンデバイス処理</span>
+      <span class="badge">最終更新日：2026年10月</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>KomPakの基本方針：</strong> KomPakは外部クラウドサーバーを介さずに動作します。画像、動画、PDFの圧縮処理はすべてお使いの端末内で100%ローカルに完結し、ファイルが端末の外に出ることはありません。
+    </div>
+
+    <h2>1. 概要とデータ不収集ポリシー</h2>
+    <p><strong>KomPak</strong>は「<strong>データ不収集（Zero Data Collection）</strong>」の原則に基づき開発されています。お客様のプライバシーを最優先に保護します。</p>
+
+    <h2>2. 収集しないデータ</h2>
+    <ul>
+      <li><strong>メディアファイル：</strong> 端末内のプロセッサのみで処理され、サーバーへのアップロードは行いません。</li>
+      <li><strong>個人情報：</strong> アカウント登録は不要で、氏名、メールアドレス、電話番号は一切取得しません。</li>
+      <li><strong>位置情報・連絡先：</strong> 位置情報や連絡先データへのアクセスは一切行いません。</li>
+    </ul>
+
+    <h2>3. 利用規約（EULA）およびお問い合わせ</h2>
+    <p>本アプリの利用には<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">Apple標準エンドユーザーライセンス契約（EULA）</a>が適用されます。<br>サポート窓口：<a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
+  </main>
+
+  <!-- 14. FRENCH (Français) -->
+  <main id="lang-fr" class="lang-section">
+    <div class="badge-bar">
+      <span class="badge green">🛡️ 100% Confidentialité</span>
+      <span class="badge green">⚡ 100% Traitement local hors ligne</span>
+      <span class="badge">Mis à jour: Octobre 2026</span>
+    </div>
+
+    <div class="highlight-card">
+      <strong>Principe fondamental de KomPak:</strong> KomPak fonctionne sans serveurs externes. Toute compression d'images, de vidéos et de PDF s'effectue à 100% localement sur votre appareil sans jamais quitter votre téléphone.
+    </div>
+
+    <h2>1. Politique de zéro collecte de données</h2>
+    <p>KomPak repose sur le principe de <strong>Zéro Collecte de Données (Zero Data Collection)</strong>. Vos données restent strictement privées.</p>
+
+    <h2>2. Données non collectées</h2>
+    <ul>
+      <li><strong>Vos fichiers multimédias:</strong> Traités localement sans transfert vers le cloud.</li>
+      <li><strong>Informations personnelles:</strong> Aucun compte requis; ni nom, ni email, ni numéro de téléphone ne sont demandés.</li>
+      <li><strong>Localisation et contacts:</strong> Aucun accès à votre localisation ou carnet d'adresses.</li>
+    </ul>
+
+    <h2>3. Conditions d'utilisation (CLUF / EULA) et Contact</h2>
+    <p>Soumis au <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank">CLUF standard d'Apple</a>.<br>Support: <a href="mailto:mamq144@gmail.com">mamq144@gmail.com</a></p>
   </main>
 
   <footer>
-    <p>&copy; 2026 KomPak. Developed by Mohammed Alqhtani. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2026 KomPak. Developed by Mohammed Alqahtani. All rights reserved.</p>
+      <p style="margin-top: 8px;">
+        <a href="https://mamq144.github.io/kompak/">Marketing Page</a> &bull;
+        <a href="https://mamq144.github.io/kompak/support.html">Help Center</a>
+      </p>
+    </div>
   </footer>
 </div>
 
 <script>
-  function setLang(lang) {
-    const arContent = document.getElementById('content-ar');
-    const enContent = document.getElementById('content-en');
-    const btnAr = document.getElementById('btn-ar');
-    const btnEn = document.getElementById('btn-en');
-
-    if (lang === 'ar') {
-      document.documentElement.lang = 'ar';
-      document.documentElement.dir = 'rtl';
-      document.body.classList.remove('en');
-      arContent.style.display = 'block';
-      enContent.style.display = 'none';
-      btnAr.classList.add('active');
-      btnEn.classList.remove('active');
+  function switchLanguage(lang) {
+    // Hide all
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    
+    // Show selected
+    const target = document.getElementById('lang-' + lang);
+    if (target) {
+      target.classList.add('active');
     } else {
-      document.documentElement.lang = 'en';
-      document.documentElement.dir = 'ltr';
-      document.body.classList.add('en');
-      arContent.style.display = 'none';
-      enContent.style.display = 'block';
-      btnEn.classList.add('active');
-      btnAr.classList.remove('active');
+      document.getElementById('lang-en').classList.add('active');
     }
+
+    // Set select value
+    const select = document.getElementById('lang-select');
+    if (select) select.value = lang;
+
+    // Handle RTL
+    if (lang === 'ar' || lang === 'ur') {
+      document.body.className = 'rtl';
+      document.documentElement.dir = 'rtl';
+    } else {
+      document.body.className = 'lang-' + lang;
+      document.documentElement.dir = 'ltr';
+    }
+
+    // Update URL hash without reload
+    history.replaceState(null, null, '?lang=' + lang);
   }
+
+  // Auto-detect language from URL (?lang=xx or #xx) or browser
+  (function initLang() {
+    const params = new URLSearchParams(window.location.search);
+    const queryLang = params.get('lang');
+    const hashLang = window.location.hash.replace('#', '');
+    const validLangs = ['en', 'ar', 'tr', 'id', 'zh', 'de', 'es', 'ko', 'ur', 'hi', 'fi', 'ru', 'ja', 'fr'];
+    
+    let chosen = 'en';
+    if (validLangs.includes(queryLang)) {
+      chosen = queryLang;
+    } else if (validLangs.includes(hashLang)) {
+      chosen = hashLang;
+    } else {
+      const browserLang = (navigator.language || '').substring(0, 2).toLowerCase();
+      if (validLangs.includes(browserLang)) chosen = browserLang;
+    }
+    switchLanguage(chosen);
+  })();
 </script>
 
 </body>
